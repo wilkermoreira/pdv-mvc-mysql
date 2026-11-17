@@ -1,0 +1,8 @@
+# Proteções para quando o projeto roda em Apache (XAMPP/WAMP) sem apontar para a pasta public/.
+Options -Indexes
+<FilesMatch "^\.(env|git)">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|log|md)$">
+    Require all denied
+</FilesMatch>
